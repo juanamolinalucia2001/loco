@@ -1,0 +1,12 @@
+<ifmodule mod_rewritec> 
+RewriteEngine on
+ErrorDocument 404 http://localhost/intentar/Error/
+
+RewriteCond %[SCRIPT_FILANAME] !-d
+RewriteCond %[SCRIPT_FILANAME] !-f
+
+RewriteRule  ^(.*)$ index.php?url=$1 [L, QSA]  
+</ifmodule>
+
+
+

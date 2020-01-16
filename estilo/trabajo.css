@@ -1,0 +1,20 @@
+/*ESTILOS DEL FORMULARIO PADRE*/
+.form-father{
+	background-color: #E0F8F7;
+	margin: 20px;
+	border-radius: 10px;
+}
+/*ESTILOS DEL FORMULARIO HIJO*/
+.form-child{
+	border-radius: 5px;
+}
+/*ESTILOS DEL LABEL AUTOMATICO*/
+.bg-label{
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #F5DA81;
+	border-radius: 5px;
+}
+.campos{
+	background-color: #e3f2fd;
+}
