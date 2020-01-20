@@ -1,11 +1,11 @@
-<ifmodule mod_rewritec> 
+<ifmodule mod_rewrite.c> 
 RewriteEngine on
-ErrorDocument 404 http://localhost/intentar/Error/
+ErrorDocument 404 https://localhost/loco/Error/
 
 RewriteCond %[SCRIPT_FILANAME] !-d
 RewriteCond %[SCRIPT_FILANAME] !-f
 
-RewriteRule  ^(.*)$ index.php?url=$1 [L, QSA]  
+RewriteRule  ^(.*)/(.*) index.php?controller=$1&action=$2
 </ifmodule>
 
 
